@@ -235,7 +235,7 @@ input:focus {
   color: white;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 550px) {
   .nav__lista {
     height: auto;
     padding: 55px;
@@ -252,7 +252,7 @@ input:focus {
 
   .main .main__imagenArticulo {
     width: 100%;
-    height: 350px;
+    height: auto;
     align-self: center;
   }
 
