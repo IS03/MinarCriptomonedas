@@ -73,6 +73,7 @@ p {
 
   .main__articuloInd {
     display: flex;
+    align-items: center;
   }
 
   //MIXIN
@@ -96,10 +97,10 @@ p {
     @include titulos(#1a3eb6);
   }
 
-  .main__imagenArticulo {
-    width: 50%;
+  .main__imagenArticuloCripto {
+    width: 550px;
     padding: 20px;
-    height: 500px;
+    height: 450px;
   }
 
   .main__listaDesordenada2 {
@@ -128,6 +129,11 @@ p {
 
   .main__articulo-1 {
     display: flex;
+    justify-content: center;
+  }
+
+  .main__tituloCentrado {
+    text-align: center;
   }
 }
 
@@ -183,8 +189,8 @@ input:focus {
 }
 
 .main__imagenArticuloCripto {
- height: auto;
- width: 50%;
+  height: auto;
+  width: 50%;
 }
 
 .imagenWallet {
@@ -194,7 +200,7 @@ input:focus {
 
 .videoYoutube {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   height: 500px;
 }
 
@@ -207,7 +213,7 @@ input:focus {
   border-width: 6px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 17px;
 
   .nav__lista {
@@ -221,6 +227,11 @@ input:focus {
 
   .nav__item {
     display: inline;
+  }
+
+  .nav__logo {
+    width: 43px;
+    height: auto;
   }
 }
 
@@ -238,7 +249,7 @@ input:focus {
   color: white;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .nav__lista {
     height: auto;
     padding: 55px;
@@ -267,7 +278,7 @@ input:focus {
     font-size: 20px;
   }
 
-  .main__titulo3 {
+  .man__titulo3 {
     font-size: 20px;
   }
 
@@ -296,7 +307,11 @@ input:focus {
     width: 90%;
     padding: 25px;
   }
-  
+
+  .main__articulo-1 {
+    flex-direction: column;
+  }
+
   .main__imagenArticuloCripto {
     width: auto;
     height: 230px;
@@ -316,12 +331,11 @@ input:focus {
     margin-bottom: 100px;
     width: 100px;
     height: 60vh;
-}
+  }
 
-.flexMainContact {
-  display: block;
-}
-
+  .flexMainContact {
+    display: block;
+  }
 
 }
 
